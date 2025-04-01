@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "tethermod",
+	"version": "${version}",
+	"name": "Tether Mod",
+	"description": "This mod creates a magical tether between the player and prevents them from going far from each other",
+	"authors": [
+		"Ilar!"
+	],
+	"license": "MIT",
+	"icon": "assets/tethermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.errantwanderer.tethermod.TetherMod"
+		],
+		"fabric-datagen": [
+			"net.errantwanderer.tethermod.TetherModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tethermod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
