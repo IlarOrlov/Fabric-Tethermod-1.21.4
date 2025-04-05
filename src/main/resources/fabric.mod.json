@@ -14,6 +14,9 @@
 		"main": [
 			"net.errantwanderer.tethermod.TetherMod"
 		],
+		"client": [
+			"net.errantwanderer.tethermod.client.TetherModClient"
+		],
 		"fabric-datagen": [
 			"net.errantwanderer.tethermod.TetherModDataGenerator"
 		]
@@ -25,7 +28,8 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-command-api-v2": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
